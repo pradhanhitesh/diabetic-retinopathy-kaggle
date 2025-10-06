@@ -60,19 +60,19 @@ def main():
             if not os.path.isdir(args.dataset):
                 raise ValueError(f"{args.dataset} is not a valid dataset directory")
 
-            print(f"📦 Training on dataset: {args.dataset}")
+            print(f"Training on dataset: {args.dataset}")
             train_pipeline(args.config)
         else:
             raise ValueError("You must provide either --dataset or --datasets")
 
-        print("✅ All training runs completed successfully.")
+        print("All training runs completed successfully.")
     # ----------------------------
     # Mode: TEST
     # ----------------------------
     elif args.mode == "test":
         print("🧪 Running test pipeline...")
         test_pipeline(args.config, args.model_path)
-        print("✅ Test pipeline completed successfully.")
+        print("Test pipeline completed successfully.")
 
 
 if __name__ == "__main__":
