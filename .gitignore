@@ -57,6 +57,7 @@ coverage.xml
 .idea/
 *.sublime-project
 *.sublime-workspace
+*.xlsx
 
 # ==============================
 # OS files
